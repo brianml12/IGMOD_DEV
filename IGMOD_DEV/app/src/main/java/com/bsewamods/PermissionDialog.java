@@ -19,7 +19,7 @@ public class PermissionDialog extends Activity {
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if(requestCode==682394) {
             if (grantResults.length <= 0 || grantResults[0] != 0) {
-                Brian.showToast(this, "Error! Porfavor habilita los permisos a la app para que puedas descargar Imagenes/Videos", Toast.LENGTH_SHORT);
+                Brian.showToast(this, "Error! Please enable app permissions so you can create and read backups", Toast.LENGTH_SHORT);
             }
             finish();
         }

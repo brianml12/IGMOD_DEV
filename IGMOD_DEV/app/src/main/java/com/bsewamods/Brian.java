@@ -90,7 +90,6 @@ public class Brian {
                 System.exit(0);
             }
         });
-
         alertBuilderD.create();
         alertBuilderD.show();
     }
@@ -99,14 +98,14 @@ public class Brian {
         v.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                String[] strListaMenu = {"Open Developer Menu", "Create developer mode backup", "Restore developer mode backup", "View developer channel"};
+                String[] strListaMenu = {"Open Developer Menu", "Create developer mode backup", "Restore developer mode backup", "☆INSTAFLOW TEAM☆"};
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 builder.setItems(strListaMenu, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which) {
                             case 0:
-                                DeveloperOptionsLauncher.loadAndLaunchDeveloperOptions(v.getContext(), activity.All(), activity, activity.A0H);
+                                DeveloperOptionsLauncher.loadAndLaunchDeveloperOptions(v.getContext(), activity.AmH(), activity, activity.A0H);
                                 return;
                             case 1:
                                 try {
@@ -147,7 +146,7 @@ public class Brian {
                                 v.getContext().startActivity(intent);
                                 return;
                             case 3:
-                                String url = "https://t.me/bsewamods";
+                                String url = "https://t.me/instaflowupdates";
                                 Uri uri = Uri.parse(url);
                                 Intent inte = new Intent(Intent.ACTION_VIEW, uri);
                                 v.getContext().startActivity(inte);
@@ -163,5 +162,6 @@ public class Brian {
             }
         });
     }
+
 }
 
